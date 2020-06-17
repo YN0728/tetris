@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tetris</title>
+	<link rel="icon" href="https://static.thenounproject.com/png/2188227-200.png">
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<div class="b">
+		<canvas id="tetris" width="520" height="800"></canvas>
+	</div>
+	<div class="jj">
+		<br>
+		<br>
+		<span onclick="main()" class="newBtn">New Game</span>
+		<div class="score">
+			Score: <div id="score">0</div>
+		</div>
+		<div class="score">
+			Highest Score: <div id="highestScore">0</div>
+		</div>
+		<br>
+		<br>
+		<canvas id="nextTet" width="160" height="120"></canvas>
+	</div>
+
+
+	<script src="tetrimino.js"></script>
+	<script src="tetris.js"></script>
+
+</body>
+</html>

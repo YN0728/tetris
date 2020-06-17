@@ -1,0 +1,61 @@
+body{
+	text-align: center;
+	background: #fff;
+	display: flex;
+}
+
+#tetris{
+
+	background: #fff;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+#nextTet{
+	background: black;
+	margin-top: 10px;
+	padding-bottom: 30px;
+}
+
+
+.b {
+	float: left;
+	width: 520px;
+	padding: 5px;
+	display: inline-block;
+	position: relative;
+	left: calc((100% - 520px - 400px) / 2);
+}
+
+.jj{
+	float: left;
+	width: 200px;
+	padding: 5px;
+	display: inline-block;
+	position: relative;
+	left: calc((100% - 520px - 400px) / 2 + 20px);
+	background-color: black;
+	margin-top: 15px;
+	height: 791px;
+
+}
+
+.newBtn{
+	font-size: 2.5em;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: white;
+}
+.newBtn:hover{
+	color: deepskyblue;
+	cursor: pointer;
+}
+
+.score{
+	margin-top: 30px;
+	margin-bottom: 10px;
+	color: white;
+
+	font-size: 1.3em;
+}
