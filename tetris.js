@@ -74,8 +74,6 @@ function drawBoard() {
 	}
 }
 
-// drawBoard();
-
 const PIECES = [[Z, "mediumseagreen"], [S, "yellow"], [J, "red"], [T, "purple"], [L, "cyan"], [I, "orange"], [O, "deepskyblue"]];
 
 function randomPiece() {
@@ -130,7 +128,6 @@ Piece.prototype.unDrawNext = function () {
 		}
 	}
 };
-
 
 Piece.prototype.draw = function () {
 	this.fill(this.color);
@@ -220,7 +217,7 @@ Piece.prototype.collision = function (x, y, piece) {
 	return false;
 };
 
-document.addEventListener("keyup", CONTROL);
+document.addEventListener("keydown", CONTROL);
 
 function CONTROL(event) {
 	let key = event.keyCode;
@@ -252,8 +249,6 @@ function drop() {
 	}
 	if (!gameOver) requestAnimationFrame(drop);
 }
-
-// drop();
 
 Piece.prototype.lock = function () {
 	for (let r = 0; r < this.activeTetrim.length; r++) {
@@ -291,7 +286,7 @@ Piece.prototype.lock = function () {
 	drawBoard();
 	console.log(scoreElement.innerHTML, "scoreElement.innerHTML");
 	scoreElement.innerHTML = score;
-	if(highScoreElement.innerHTML<score){
+	if (highScoreElement.innerHTML < score) {
 		highScoreElement.innerText = score;
 	}
 };
